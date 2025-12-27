@@ -1,0 +1,54 @@
+:root{
+  --primary: #1DA1F2;
+  --bg: #ffffff;
+  --text: #0F1419;
+  --muted: #536471;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.layout{
+  display:flex;
+  gap:24px;
+  padding:24px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.left{width:260px}
+.main{flex:1; max-width:600px}
+.right{width:300px}
+
+.sidebar .logo{
+  font-weight:800;
+  font-size:24px;
+  margin-bottom:16px;
+}
+
+.sidebar ul{list-style:none;padding:0;margin:0}
+.nav-item{display:flex;gap:12px;align-items:center;padding:10px 0;cursor:pointer;border-radius:8px}
+.nav-item:hover{background:#f5f8fa}
+
+.icon{width:28px;height:28px;background:#e6e6e6;border-radius:8px}
+
+.compose{padding:12px;border-bottom:1px solid #eee;margin-bottom:12px}
+.compose-row{display:flex;gap:12px}
+.avatar{width:48px;height:48px;border-radius:999px;background:#ddd}
+.compose textarea{flex:1;border:0;outline:none;resize:vertical;min-height:80px;font-size:16px}
+.compose-footer{display:flex;justify-content:space-between;align-items:center;padding-top:8px}
+.tweet-btn{background:var(--primary);color:#fff;border:0;padding:8px 12px;border-radius:999px;cursor:pointer}
+
+.tweet-card{border-bottom:1px solid #eee;padding:12px 0}
+.tweet-row{display:flex;gap:12px}
+.tweet-body{flex:1}
+.tweet-header{display:flex;gap:8px;align-items:center}
+.tweet-header .meta{color:var(--muted);font-size:13px}
+.tweet-actions{display:flex;gap:24px;color:var(--muted);margin-top:8px;font-size:14px}
